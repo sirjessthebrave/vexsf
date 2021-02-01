@@ -1,13 +1,13 @@
 :root {
-  --dark-blue: #30618c;
-  --light-blue: #82b8d9;
-  --green: #5e7332;
-  --wheat: #bcb5a1;
-  --brown: #4a3d35;
+  --light: #d9aa55;
+  --medium: #bf863f;
+  --dark: #a6652d;
+  --orange: #bf5a36;
+  --black: #0d0d0d;
 }
 
 body {
-  background-image: url("bog.jpg");
+  background-image: url("background.jpg");
   background-size: cover;
   font-family: "Raleway", sans-serif;
   font-size: 26px;
@@ -18,32 +18,35 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+img {
+  height: 300px;
+  width: auto;
+}
 
 .wrapper {
-  grid-row: 3 / 3;
+  grid-row: 2 / 3;
   grid-column: 2 / 3;
   text-align: center;
   display: inline;
   margin: 0 auto;
-  color: var(--wheat);
+  color: var(--orange);
 }
 h1 {
   font-family: "Cinzel", serif;
   font-size: 98px;
   font-weight: 700;
-  margin-bottom: 0;
-  background: -webkit-linear-gradient( #bcb5a1, #5e7332, #4a3d35);
+  margin: 0;
+  background: -webkit-linear-gradient(#d9aa55, #bf5a36);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-
 @media screen and (max-width: 600px) {
-    body{
-        grid-template-columns: repeat(3, 1fr);
-        font-size: 14px;
-    }
-    h1{
-        font-size: 30px;
-    }
+  body {
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 30px;
+  }
 }
