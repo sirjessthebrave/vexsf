@@ -13,8 +13,7 @@
 }
 
 body {
-  background-image: url("background.jpg");
-  background-size: cover;
+  background-image: url("backgroundsm.jpg");
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   display: grid;
